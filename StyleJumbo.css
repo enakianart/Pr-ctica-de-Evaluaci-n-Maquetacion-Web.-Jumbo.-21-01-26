@@ -1,8 +1,8 @@
 body {
-    margin: 0;
+   margin: 0;
     padding: 0;
-    padding-top: 164.3px; /* deja espacio para e banner */
-    
+    /* Ajustamos el espacio para que el banner no quede debajo del menú triple */
+    padding-top: 190px;
 }
 
 html, body {
@@ -20,6 +20,15 @@ p, h4 {
     font-size: 16px;      
     color: #333333; 
     word-spacing: 12%; 
+}
+
+
+header {
+   position: fixed;   
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 9999;
 }
 
 
@@ -42,14 +51,14 @@ p, h4 {
 
 }
 
-#nav2{
+#nav2 {
     background-color: #cccccc;
     display: flex;
-    justify-content: center;   /* Centra horizontal */
-    align-items: center;       /* Centra vertical */
-    gap: 22px;                 /* espacio entre enlacess */
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
     padding: 10px 0;
-    margin: 0px;
+    width: 100%;
 }
 
 #nav2 a{
@@ -90,13 +99,7 @@ p, h4 {
     border: 1px solid #ccc; 
 }
 
-header{
-   position: fixed;   /* fija */
-    top: 0;
-    left: 0;
-    width: 100%; 
-    z-index: 9999; /* nada sobre pasa el header/menu q flota */
-}
+
 
 .BannerNoOferta{
     display: block;         
@@ -321,7 +324,7 @@ header{
 @media (max-width: 768px) {
 
     body {
-        padding-top: 160px; /* Ajustado para que no tape el contenido */
+        padding-top: 280px; /* Ajustado para que no tape el contenido */
     }
 
     #nav1 {
@@ -331,8 +334,29 @@ header{
     
     #nav1 a {
         margin: 0 5px;
-        font-size: 11px;
+        font-size: 12px;
     }
+
+
+    #nav2 {
+       top: 125px; 
+    display: flex;       /* Aseguramos que sea flex */
+    flex-wrap: wrap; 
+    gap: 2px;            /* Espacio mínimo entre elementos */
+    padding: 3px, 3px;       
+    
+    /* ESPACIO ENTRE LÍNEAS */
+    align-content: flex-start; 
+    justify-content: center;
+    }
+
+    #nav2 a {
+       font-size: 12px;
+    margin: 2px 4px;     /*  margen vertical */
+    line-height: 1.2;    /* altura de la línea de texto */
+    display: inline-block;
+    }
+
 
     .BannerNoOferta {
         display: flex;
