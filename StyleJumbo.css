@@ -324,7 +324,7 @@ header {
 @media (max-width: 768px) {
 
     body {
-        padding-top: 280px; /* Ajustado para que no tape el contenido */
+        padding-top: 325px; /* Ajustado para que no tape el contenido */
     }
 
     #nav1 {
