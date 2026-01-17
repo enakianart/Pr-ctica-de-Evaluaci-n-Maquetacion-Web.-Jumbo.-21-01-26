@@ -1,8 +1,8 @@
 body {
    margin: 0;
     padding: 0;
-    /* Ajustamos el espacio para que el banner no quede debajo del menú triple */
-    padding-top: 190px;
+    
+    padding-top: 190px; /* Espacio para el header fijo */
 }
 
 html, body {
@@ -210,7 +210,7 @@ header {
 
 
 .Tiendas {
-    float: left;        /* Las tiendas ahora flotan una al lado de la otra */
+    float: left;       
     width: 33.33%;      /* Tres columnas */
     padding: 20px;
 }
@@ -340,9 +340,9 @@ header {
 
     #nav2 {
        top: 125px; 
-    display: flex;       /* Aseguramos que sea flex */
+    display: flex;       
     flex-wrap: wrap; 
-    gap: 2px;            /* Espacio mínimo entre elementos */
+    gap: 2px;            /* Espacio entre elementos */
     padding: 3px, 3px;       
     
     /* ESPACIO ENTRE LÍNEAS */
