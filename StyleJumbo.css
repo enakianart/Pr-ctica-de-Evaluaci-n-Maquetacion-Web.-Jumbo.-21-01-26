@@ -17,10 +17,9 @@ html, body {
 
 p, h4 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;       /* Tamaño estándar de lectura */
-    line-height: 1.6;      /* Da espacio entre líneas para que no se vea amontonado */
-    color: #333333;        /* Un gris muy oscuro, más suave que el negro puro */
-    letter-spacing: 0.5px; /* Un ligero espacio entre letras como en la imagen */
+    font-size: 16px;      
+    color: #333333; 
+    word-spacing: 12%; 
 }
 
 
@@ -208,9 +207,25 @@ header{
 
 
 .Tiendas {
-    width: 33%;             /* 33% asegura que quepan 3 por fila  */
-    min-width: 300px;       /* Evita que se encojan demasiado en pantallas pequeñas */
+    float: left;        /* Las tiendas ahora flotan una al lado de la otra */
+    width: 33.33%;      /* Tres columnas */
     padding: 20px;
+}
+
+
+
+
+
+.limpiador {
+    clear: both;  
+    height: 0;   
+}
+
+
+.Tiendas h3 {
+    box-sizing: content-box; 
+    padding: 5px;
+    border-bottom: 2px solid #CE2A30;
 }
 
 
