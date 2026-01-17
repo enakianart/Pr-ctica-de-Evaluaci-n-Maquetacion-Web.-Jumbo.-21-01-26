@@ -1,0 +1,446 @@
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 164.3px; /* deja espacio para e banner */
+    
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /*quitta los espacios en blanco al scrolear hacia los lados*/
+}
+
+ h1, a{
+    font-family: 'Roboto Slab', serif;
+}
+
+
+p, h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;       /* Tamaño estándar de lectura */
+    line-height: 1.6;      /* Da espacio entre líneas para que no se vea amontonado */
+    color: #333333;        /* Un gris muy oscuro, más suave que el negro puro */
+    letter-spacing: 0.5px; /* Un ligero espacio entre letras como en la imagen */
+}
+
+
+
+#nav1 {
+    background-color: #000000;
+    width: 100%; 
+    padding: 10px;
+    font-size: 12px;
+    text-align: right; 
+    box-sizing: border-box; 
+}
+
+#nav1 a {
+    margin-left: 40px; 
+    color: white;
+    text-decoration: none; 
+    font-size: 13px;
+    text-decoration: none;
+
+}
+
+#nav2{
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;   /* Centra horizontal */
+    align-items: center;       /* Centra vertical */
+    gap: 22px;                 /* espacio entre enlacess */
+    padding: 10px 0;
+    margin: 0px;
+}
+
+#nav2 a{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: none;
+
+}
+
+
+
+#DivJumbo {
+    background-color: #CE2A30;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.contenedor-derecha {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;    /* Alinea hacia la derecha */
+    gap: 7px;  
+}
+
+.enlaces-usuario a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.input-busqueda {
+    width: 450px;       
+    padding: 8px 15px;  /* la hace mas alta*/
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+}
+
+header{
+   position: fixed;   /* fija */
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 9999; /* nada sobre pasa el header/menu q flota */
+}
+
+.BannerNoOferta{
+    display: block;         
+    text-align: center;      
+    margin: 0 auto;        
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+
+
+
+/*--- para el perro aladin de la pagina copia --- */
+.PerroAladin {
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    padding: 20px 10px;     
+}
+
+.PerroAladin img {
+    height: auto;        
+}
+
+
+
+
+
+
+
+
+.OfertaTittle, .LoQueNecesitasTittle, .AhorroVariedadCalidadTittle, .NuestrasTiendasTittle {  /* h1 */
+    flex: 100%;       
+    text-align: center; 
+    margin-bottom: 20px;  
+}
+
+
+
+#ProductosSection, .LoQueNecesitasSection, .AhorroVariedadCalidadSection, .GifMusica, #NuestrasTiendas{
+    display: flex;
+    flex-wrap: wrap;       /* productos bajen a la siguiente fila */
+    justify-content: center; 
+    gap: 20px;             
+    padding: 20px;
+    margin-top: 50px;     
+}
+
+#ProductosSection .Productos {
+    width: 300px;          
+    padding: 20px;
+    text-align: center;    
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border-radius: 15px;  
+
+}
+
+#ProductosSection .Productos:hover .ProductoIMG, 
+.LoQueNecesitasSection article:hover img {
+    transform: scale(1.3); /* Se hace un chiin mas grande la immagen*/
+}
+
+
+.AhorroVariedadCalidadSection article:hover img,
+.Guasa div a img:hover {
+    transform: scale(1.05); 
+}
+
+
+#CambiosDevoluciones, #Contactanos, #Horario, #NuestrasTiendas {
+    padding: 5px 100px;
+    margin-top: 12px;     
+}
+
+
+
+
+
+
+
+#Contactanos article a, #NuestrasTiendas article a {
+    color: #CE2A30;
+    text-decoration: none;
+}
+
+.InfoMusica {
+    display: flex;
+    flex-direction: column; /* Pone el audio debajo del título */
+    justify-content: center;
+}
+
+.GifMusica img{
+        border-radius: 15px;   /* Bordes redondeados */
+        box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Tiendas {
+    width: 33%;             /* 33% asegura que quepan 3 por fila  */
+    min-width: 300px;       /* Evita que se encojan demasiado en pantallas pequeñas */
+    padding: 20px;
+}
+
+
+.Mapa {
+    width: 90%;
+    display: flex;
+    justify-content: center; 
+    padding: 20px 0;       /* Espacio arriba y abajo */
+}
+
+.Mapa iframe {
+    width: 80%;
+    border-radius: 15px;   /* Bordes redondeados */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1); 
+}
+
+
+
+
+
+
+
+
+#seccion-final {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: flex-start;
+    padding: 50px 2%; 
+    margin-top: 40px;
+    width: 100%;     
+    box-sizing: border-box;
+}
+
+
+#seccion-final hr {
+    flex: 100%;   
+    border: 0;
+    border-top: 1.5px solid #ccc;
+    margin-bottom: 30px;
+}
+
+.LogoJumboFooter{
+    flex: 0 0 auto;
+    margin-right: 20px;
+
+}
+
+
+ .ApartadosFinal  {
+    display: flex;
+    flex-direction: column; /* Alinea los enlaces hacia abajo */
+    margin-bottom: 20px;
+    width: 20%;            
+
+}
+
+ .ApartadosFinal p {
+    color: #CE2A30; 
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+ .ApartadosFinal a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    margin-bottom: 8px; 
+}
+
+ .ApartadosFinal a:hover {
+    color: #CE2A30;
+}
+
+/*Redes y CCN */
+.ApartadosFinal-Derecha {
+    align-items: flex-end; 
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- DISEÑO PARA CELULARES  --- */
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 160px; /* Ajustado para que no tape el contenido */
+    }
+
+    #nav1 {
+        text-align: center;
+        padding: 5px;
+    }
+    
+    #nav1 a {
+        margin: 0 5px;
+        font-size: 11px;
+    }
+
+    .BannerNoOferta {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        gap: 20px;             
+    }
+
+    .BannerNoOferta img {
+        width: 95%;              
+        height: auto;
+    }
+
+
+
+/*--- para el perro aladin de la pagina copia --- */
+
+    .PerroAladin img {
+        width: 95%;              
+        height: auto;
+    }
+
+    
+    .BannerNoOferta iframe {
+        width: 90%;       
+        height: 320px;
+    }
+
+
+    .GifMusica {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+        align-items: center;    
+
+    }
+
+    .GifMusica img {
+        width: 90%;      
+        margin: 0 auto;
+    }
+
+    .InfoMusica audio {
+        width: 90%;      
+    }
+
+    .Guasa {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        gap: 20px;   
+    }
+
+    .Guasa div img {
+        width: 95%;  
+        height: auto;
+    }
+
+    /* Barra de búsqueda y logo */
+    #DivJumbo {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .input-busqueda {
+        width: 87%;
+    }
+
+    .contenedor-derecha {
+        align-items: center;
+        width: 100%;
+    }
+
+    .Tiendas, #ProductosSection .Productos {
+        width: 90%;
+        min-width: unset;
+    }
+
+    .Mapa {
+        width: 90vw;           
+        position: relative;
+        left: -3%;
+        right: 50%;
+        margin-left: -20vw;   
+        margin-right: -20vw;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .Mapa iframe {
+        width: 100%;           
+        border: none;
+    }
+
+
+    #seccion-final {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 0%;
+    }
+
+    .ApartadosFinal {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    .LogoJumboFooter {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .ApartadosFinal-Derecha {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
