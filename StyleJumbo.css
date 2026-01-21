@@ -419,7 +419,7 @@ section[id] {
         align-items: start;
     }
 
-    /* 2. El título debe ocupar las dos columnas arriba del todo */
+    /* El titulo debe ocupar las dos columnas arriba del todo */
     .LoQueNecesitasTittle {
         grid-column: span 2;
         width: 100%;
@@ -427,7 +427,7 @@ section[id] {
         margin-bottom: 10px;
     }
 
-    /* 3. ELIMINAMOS EL DESPLAZAMIENTO (Esto quita los espacios blancos) */
+    /* ELIMINAR EL DESPLAZAMIENTO (Esto quita los espacios blancos) */
     /* Reseteamos todas las posiciones relativas que definiste para escritorio */
     .BebidasAlcoholicasIMG, 
     .CuidadoCorporalIMG {
@@ -436,7 +436,7 @@ section[id] {
         left: 0 !important; /* Esto elimina el empuje de 320px */
     }
 
-    /* 4. Aseguramos que los artículos no tengan márgenes raros */
+    /* Aseguramos que los articulos no tengan margenes raros */
     .LoQueNecesitasSection article {
         width: 100%;
         display: flex;
@@ -444,7 +444,7 @@ section[id] {
         margin: 0 !important;
     }
 
-    /* 5. Tamaño de las imágenes para que encajen bien */
+    /* Tamaño de las imagenes para que encajen bien */
     .LoQueNecesitasSection article img {
         width: 140px !important; /* Tamaño fijo para que no se vean gigantes */
         height: auto !important;
@@ -565,7 +565,7 @@ section[id] {
         border: none;
     }
 
-    /* Reducir tamaño de imágenes en AhorroVariedadCalidadSection para móviles */
+    /* Reducir tamaño de imágenes en AhorroVariedadCalidadSection para celulares */
     .AhorroVariedadCalidadSection img,
     .AhorroVariedadCalidadSection .SupermercadoIMG,
     .AhorroVariedadCalidadSection .ElectrodomesticosIMG,
@@ -601,7 +601,7 @@ section[id] {
         text-align: center;
     }
 
-    /* Justificar textos y reducir un poco el tamaño en móviles */
+    /* Justificar textos y reducir un poco el tamaño en clulares */
     p, li, .Tiendas p, .InfoMusica h4, #Contactanos article p, #Contactanos article a, .ApartadosFinal a {
         text-align: justify;
         font-size: 13px;
@@ -612,7 +612,7 @@ section[id] {
         font-size: 13px;
     }
 
-    /* Mantener títulos principales legibles y centrados */
+    /* Mantener títulos principales centrados */
     .OfertaTittle h1, .LoQueNecesitasTittle h1, .AhorroVariedadCalidadTittle h1, .NuestrasTiendasTittle h1 {
         font-size: 20px;
         text-align: center;
